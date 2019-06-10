@@ -7,7 +7,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-   <script src="./assets/script.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js"></script>
+   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
     <title>Catching the Train</title>
 </head>
 <body>
@@ -67,6 +71,8 @@
                             <div class="form-group">
                               <label for="timeTravel">Frequency (min)</label>
                               <input class="form-control" id="timeTravel" placeholder="" type="text">
+                              
+                              <!--Submit Button-->
                             </div>
                             <button class="btn btn-primary float-right" id="trackSetter">Submit</button>
                           </form>
@@ -79,6 +85,6 @@
                 </div>
 
 
-
+                <script src="./assets/script.js"></script>
 </body>
 </html>
