@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+   <script src="./assets/script.js"></script>
+    <title>Catching the Train</title>
+</head>
+<body>
+    
+
+        <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                  <h1 class="display-4" style="text-align: center">Commodore Express</h1>
+                  <p class="lead" style="text-align: center">Anchor down to your next destination!</p>
+                </div>
+              </div>
+
+              <div class="col-md-12">
+              
+                    <!-- Current Trains-->
+                    <div class="card mb-4">
+                      <div class="card-header">Current Train Schedule</div>
+                      <div class="card-body">
+                        <table class="table table-sm table-hover" id='train-table'>
+                          <thead>
+                            <tr>
+                              <th scope="col">Train Name</th>
+                              <th scope="col">Destination</th>
+                              <th scope="col">Frequency</th>
+                              <th scope="col">Next Arrival</th>
+                              <th scope="col">Minutes Away</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                        <div class="col-md-12">
+                            <!--Adding Train-->
+                  <div class="card mb-4">
+                        <div class="card-header" style="text-align: center"><strong> Train</div>
+                        <div class="card-body">
+              
+                          <!-- Entry Form -->
+                          <form>
+                            <div class="form-group">
+                              <label for="system">Train Express Name</label>
+                              <input class="form-control" id="system" placeholder="" type="text">
+                            </div>
+                            <div class="form-group">
+                              <label for="vacay">DESTINATION</label>
+                              <input class="form-control" id="vacay" placeholder="" type="text">
+                            </div>
+                            <div class="form-group">
+                              <label for="checkPoint">First Train Arrival (HH:mm - military time)</label>
+                              <input class="form-control" id="checkPoint" placeholder="" type="text">
+                            </div>
+                            <div class="form-group">
+                              <label for="timeTravel">Frequency (min)</label>
+                              <input class="form-control" id="timeTravel" placeholder="" type="text">
+                            </div>
+                            <button class="btn btn-primary float-right" id="trackSetter">Submit</button>
+                          </form>
+              
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              
+                </div>
+
+
+
+</body>
+</html>
